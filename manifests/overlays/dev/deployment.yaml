@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: webserver
 spec:
-  replicas: 1
+  replicas: 2
   template:
     spec:
       containers:
@@ -12,4 +12,6 @@ spec:
           - name: ENVONE
             value: "hellothisisDEV"
           - name: ENVTWO
+            value: "i-only-have-this-in-the-dev-overlay"
+          - name: ENVTHREE
             value: "i-only-have-this-in-the-dev-overlay"
