@@ -18,6 +18,7 @@ spec:
       labels:
         team: "warehouse"
         critical: "4"
+        version: "2"
     spec:
       containers:
       - image: nginx:latest
