@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: webserver-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/pbickerd/fr-argo-testing
+    targetRevision: HEAD
+    path: manifests/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: pb-website-dev
