@@ -17,7 +17,7 @@ spec:
     metadata:
       labels:
         team: warehouse
-        critical: 5
+        critical: "5"
     spec:
       containers:
       - image: nginx:latest
