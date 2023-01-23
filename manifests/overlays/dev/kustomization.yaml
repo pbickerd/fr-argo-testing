@@ -7,7 +7,7 @@ namePrefix: dev-
 images:
   - name: nginx
     newName: nginx
-    newTag: "1.22.2"
+    newTag: "1.22.1"
 patchesStrategicMerge:
 - deployment.yaml
 - service.yaml
