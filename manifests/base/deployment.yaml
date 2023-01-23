@@ -4,6 +4,7 @@ metadata:
   name: webserver
   labels:
     team: warehouse
+    critical: 5
     
 spec:
   replicas: 1
