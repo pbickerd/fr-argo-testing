@@ -16,7 +16,7 @@ spec:
   template:
     metadata:
       labels:
-        team: warehouse
+        team: "warehouse"
         critical: "5"
     spec:
       containers:
