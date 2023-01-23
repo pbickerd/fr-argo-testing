@@ -4,3 +4,11 @@ metadata:
   name: webserver
 spec:
   replicas: 1
+  template:
+    spec:
+      containers:
+        env:
+          - name: ENVONE
+            value: "hellothisisDEV"
+          - name: ENVTWO
+            value: "i-only-have-this-in-the-dev-overlay"
