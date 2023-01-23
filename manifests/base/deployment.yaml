@@ -2,9 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webserver
-  labels:
-    team: warehouse
-    critical: 5
     
 spec:
   replicas: 1
@@ -18,6 +15,9 @@ spec:
     type: RollingUpdate
   template:
     metadata:
+      labels:
+        team: warehouse
+        critical: 5
     spec:
       containers:
       - image: nginx:latest
